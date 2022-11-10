@@ -16,11 +16,6 @@ class DateController extends StorefrontController
      */
     public function showExample(): JsonResponse
     {
-        // die('Inside controller');
-//        $log = fopen(__DIR__ . 'kindaLog.txt', 'w+');
-//        fwrite($log, '1');
-//        fclose($log);
         return new JsonResponse("{\"timestamp\": \"" . date('d-m-Y H:i:s') . "\"}", 200, [], true);
-        // ['timestamp' => date('d-m-Y H:i:s')]
     }
 }

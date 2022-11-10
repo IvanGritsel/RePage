@@ -16,12 +16,10 @@ export default class PagePlugin extends Plugin {
     }
 
     _fetch() {
-        // console.log(this._client);
         this._client.get('/timestamp', this._setContent.bind(this), 'application/json', true);
     }
 
     _setContent(data) {
-        // console.log(data);
         this.textdiv.innerHTML = JSON.parse(data).timestamp;
     }
 }
