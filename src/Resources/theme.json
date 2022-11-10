@@ -1,0 +1,38 @@
+{
+  "name": "RePage",
+  "author": "IH",
+  "description": {
+    "en-GB": "Theme description"
+  },
+  "views": [
+     "@Storefront",
+     "@Plugins",
+     "@RePage"
+  ],
+  "style": [
+    "app/storefront/src/scss/overrides.scss",
+    "@Storefront",
+    "app/storefront/src/scss/base.scss"
+  ],
+  "script": [
+    "@Storefront",
+    "app/storefront/dist/storefront/js/re-page.js"
+  ],
+  "asset": [
+    "@Storefront",
+    "app/storefront/src/assets"
+  ],
+  "config": {
+    "fields": {
+      "sw-color-brand-primary": {
+        "value": "#ff00ba"
+      },
+      "sw-color-brand-secondary": {
+        "value": "#ff0055"
+      },
+      "sw-color-buy-button": {
+        "value": "#ff0055"
+      }
+    }
+  }
+}

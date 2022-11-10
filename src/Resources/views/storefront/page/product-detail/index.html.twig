@@ -1,0 +1,14 @@
+{% sw_extends '@Storefront/storefront/page/product-detail/index.html.twig' %}
+{% block page_product_detail_headline %}
+    {{ parent() }}
+    {% set productReviewCount = page.reviews.totalReviews %}
+    {% if productReviewCount > 0 %}
+        {% set productAvgRating = page.reviews.matrix.averageRating|round(2, 'common') %}
+    {% endif %}
+    <div>
+        {% sw_include '@Storefront/storefront/component/review/rating.html.twig' with{
+            points: productAvgRating,
+            style: 'text-primary'
+        } %}
+    </div>
+{% endblock %}

@@ -1,0 +1,18 @@
+{
+  "name": "swag/page-plugin",
+  "description": "Theme skeleton plugin",
+  "type": "shopware-platform-plugin",
+  "license": "MIT",
+  "autoload": {
+    "psr-4": {
+      "RePage\\": "src/"
+    }
+  },
+  "extra": {
+    "shopware-plugin-class": "RePage\\RePage",
+    "label": {
+      "de-DE": "Theme RePage plugin",
+      "en-GB": "Theme RePage plugin"
+    }
+  }
+}

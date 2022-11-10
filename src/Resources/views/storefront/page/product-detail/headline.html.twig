@@ -1,0 +1,7 @@
+{% sw_extends '@Storefront/storefront/page/product-detail/headline.html.twig' %}
+{% block page_product_detail_name %}
+    <div style="display: flex; flex-direction: column">
+        {{ parent() }}
+        <h3>{{ page.product.productNumber }}</h3>
+    </div>
+{% endblock %}

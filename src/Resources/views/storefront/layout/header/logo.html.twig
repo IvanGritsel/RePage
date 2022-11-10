@@ -1,0 +1,13 @@
+{% sw_extends '@Storefront/storefront/layout/header/logo.html.twig' %}
+
+{% block layout_header_logo_link %}
+    {% block layout_header_logo_image %}
+        <picture class="header-logo-picture">
+            <img src="{{ asset('bundles/repage/awesome_logo_resized.png', 'asset') }} " style="width: auto">
+        </picture>
+        <div data-page-plugin>
+            <h4 id="ajax-display"></h4>
+            <button class="btn btn-primary btn-block" id="ajax-button">Click for date</button>
+        </div>
+    {% endblock %}
+{% endblock %}
